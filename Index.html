@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3zrael</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="CheaT-Tracker.png">
+</head>
+
+<body>
+<main class="content">
+
+<section class="logo-area">
+<pre class="logo-text">
+  ______  ______  __     __             _____                 _            _    _              ____                _____   _    _ 
+ |___  / |  ____| \ \   / /     /\     |  __ \        /\     | |          | |  | |     /\     |  _ \      /\      / ____| | |  | |
+    / /  | |__     \ \_/ /     /  \    | |  | |      /  \    | |  ______  | |__| |    /  \    | |_) |    /  \    | (___   | |__| |
+   / /   |  __|     \   /     / /\ \   | |  | |     / /\ \   | | |______| |  __  |   / /\ \   |  _ <    / /\ \    \___ \  |  __  |
+  / /__  | |____     | |     / ____ \  | |__| |    / ____ \  | |          | |  | |  / ____ \  | |_) |  / ____ \   ____) | | |  | |
+ /_____| |______|    |_|    /_/    \_\ |_____/    /_/    \_\ |_|          |_|  |_| /_/    \_\ |____/  /_/    \_\ |_____/  |_|  |_|
+</pre>
+
+<p class="logo-area-quote">
+HELLO AND WELCOME! WANT TO CHAT OR CONNECT OR HELP? &gt;
+<a href="https://t.me/Z_3zrael" class="telegram-link" target="_blank" rel="noopener noreferrer">
+Click Here!
+</a>
+</p>
+</section>
+
+<script>
+/* =====================
+   HARD LOCK (NO SCROLL)
+===================== */
+document.documentElement.style.overflow = "hidden";
+document.body.style.overflow = "hidden";
+window.addEventListener("scroll", () => window.scrollTo(0,0));
+
+/* =====================
+   ACCESS LEVEL
+===================== */
+const access = document.createElement("div");
+access.style.cssText = `
+position:fixed;
+top:15px;right:20px;
+color:#00ff00;
+font-size:18px;
+text-shadow:0 0 10px #00ff00;
+z-index:999;
+`;
+document.body.appendChild(access);
+
+const accessStates = ["GUEST", "USER", "ROOT"];
+let accessIndex = 0;
+
+setInterval(() => {
+  access.textContent = "ACCESS: " + accessStates[accessIndex];
+  accessIndex = (accessIndex + 1) % accessStates.length;
+}, 4000);
+
+
+/* =====================
+   BACKGROUND ATTACK FEEL
+===================== */
+const bg = document.createElement("div");
+bg.style.cssText = `
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+pointer-events:none;
+background:radial-gradient(circle at center, rgba(255,0,0,0.05), transparent 70%);
+animation:pulse 3s infinite;
+z-index:-1;
+`;
+document.body.appendChild(bg);
+
+const style = document.createElement("style");
+style.textContent = `
+@keyframes pulse {
+  0% { opacity:0.3; }
+  50% { opacity:0.6; }
+  100% { opacity:0.3; }
+}`;
+document.head.appendChild(style);
+
+/* =====================
+   HIDDEN COMMAND
+===================== */
+let buffer = "";
+document.addEventListener("keydown", e => {
+  buffer += e.key.toLowerCase();
+  buffer = buffer.slice(-10);
+  if (buffer.includes("root")) {
+    access.textContent = "ACCESS: ROOT ✔";
+    document.body.style.filter = "hue-rotate(120deg)";
+  }
+});
+</script>
+
+<section class="skills-section">
+
+  <h2 class="skills-title">CURRENT SKILLS</h2>
+  <p class="skills-sub">Knowledge & Hands-On Experience</p>
+
+  <div class="skills-table-wrapper">
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>SKILL / COURSE</th>
+          <th>CATEGORY</th>
+          <th>LEVEL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Red Hat System Administration (RHSA) LvL 1 / 2</td><td>Linux</td><td>Advanced</td></tr>
+        <tr><td>2</td><td>Certified Ethical Hacker (CEH)</td><td>Ethical Hacking</td><td>Advanced</td></tr>
+        <tr><td>3</td><td>Basic Bash Scripting</td><td>Automation</td><td>Intermediate</td></tr>
+        <tr><td>4</td><td>Python</td><td>Programming</td><td>Intermediate</td></tr>
+        <tr><td>5</td><td>Kali Linux</td><td>Penetration OS</td><td>Advanced</td></tr>
+        <tr><td>6</td><td>Nmap</td><td>Reconnaissance</td><td>Advanced</td></tr>
+        <tr><td>7</td><td>Metasploit Framework</td><td>Exploitation</td><td>Advanced</td></tr>
+        <tr><td>8</td><td>Wireshark</td><td>Traffic Analysis</td><td>Intermediate</td></tr>
+        <tr><td>9</td><td>Bettercap</td><td>MITM</td><td>Intermediate</td></tr>
+        <tr><td>10</td><td>Evil Twin / Handshake</td><td>Wireless Attacks</td><td>Intermediate</td></tr>
+        <tr><td>11</td><td>BeEF Framework</td><td>Browser Exploitation</td><td>Intermediate</td></tr>
+        <tr><td>12</td><td>MITM Attacks</td><td>Network Attacks</td><td>Intermediate</td></tr>
+        <tr><td>13</td><td>Phishing Attacks</td><td>Social Engineering</td><td>Intermediate</td></tr>
+        <tr><td>14</td><td>OWASP Top 10</td><td>Web Security</td><td>Advanced</td></tr>
+        <tr><td>15</td><td>XSS / SQL Injection</td><td>Web Exploitation</td><td>Intermediate</td></tr>
+        <tr><td>16</td><td>DoS / DDoS</td><td>Network Attacks</td><td>Intermediate</td></tr>
+        <tr><td>17</td><td>OSINT</td><td>Intelligence Gathering</td><td>Intermediate</td></tr>
+        <tr><td>18</td><td>Git & GitHub</td><td>Version Control</td><td>Advanced</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+
+<footer class="error">
+> "PASSIONATE ABOUT CYBERSECURITY AND CONTINUOUS LEARNING, WITH INTEREST IN PENETRATION TESTING, SOCIAL ENGINEERING, VULNERABILITY RESEARCH"
+</footer>
+
+</main>
+
+<script>
+const audio = document.getElementById('bg-music');
+const toggle = document.getElementById('music-toggle');
+const seek = document.getElementById('seek');
+const currentTimeEl = document.getElementById('current-time');
+const durationEl = document.getElementById('duration');
+const player = document.querySelector('.music-player');
+
+const fmt = t => {
+  if (isNaN(t)) return '0:00';
+  const m = Math.floor(t / 60);
+  const s = Math.floor(t % 60).toString().padStart(2,'0');
+  return `${m}:${s}`;
+};
+
+audio.addEventListener('loadedmetadata', () => {
+  durationEl.textContent = fmt(audio.duration);
+  seek.max = Math.floor(audio.duration);
+});
+
+toggle.onclick = () => {
+  if (audio.paused) {
+    audio.play();
+    toggle.textContent = '⏸ Pause';
+    player.classList.add('playing');
+  } else {
+    audio.pause();
+    toggle.textContent = '▶ Play';
+    player.classList.remove('playing');
+  }
+};
+
+audio.ontimeupdate = () => {
+  seek.value = Math.floor(audio.currentTime);
+  currentTimeEl.textContent = fmt(audio.currentTime);
+};
+
+seek.oninput = () => audio.currentTime = seek.value;
+
+audio.onended = () => {
+  toggle.textContent = '▶ Play';
+  seek.value = 0;
+  currentTimeEl.textContent = '0:00';
+  player.classList.remove('playing');
+};
+</script>
+
+</body>
+</html>
